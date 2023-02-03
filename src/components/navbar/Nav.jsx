@@ -1,5 +1,6 @@
 import React from 'react'
 import './Nav.css'
+import './../../index.css'
 
 const Nav = () => {
     return (

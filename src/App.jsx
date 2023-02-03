@@ -1,5 +1,7 @@
-// import logo from './logo_01.png';
+import './index.css';
 import './App.css';
+// import logo from './logo_01.png';
+
 import NavBar from './components/navbar/Nav'
 import Header from './components/header/Slider'
 import About from './components/about/About'

@@ -1,5 +1,7 @@
 import React from 'react'
 import './Slider.css'
+import './../../index.css'
+// import './settings.css'
 
 const Slider = () => {
     return (
@@ -10,18 +12,20 @@ const Slider = () => {
                         <ul>
                             
                         
-                            <li>
-                                <div class="ImageSection">
-                                {/* <img src="6.png" alt="App Store" ></img> */}
-                                </div>
-                                <div class="TextArea">
-                                    <h2><strong>Portfolio 2.0</strong></h2>
-                                    
-                                    Some text here... Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                                    Etiam arcu erat, faucibus ut odio a, pellentesque euismod velit. 
-                                </div>
-                            </li>
-                             {/* <li data-index="rs-3046" data-transition="fadetotopfadefrombottom" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                            
+                              <li data-index="rs-3046" data-transition="fadetotopfadefrombottom" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                                {/* <li> */}
+                                    <div class="ImageSection">
+                                        <img src={require('./Profile.png')} alt="App Store" ></img>
+                                    </div>
+                                    <div class="TextArea">
+                                        <h2><strong>Portfolio 2.0</strong></h2>
+                                        
+                                        Some text here... Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                        Etiam arcu erat, faucibus ut odio a, pellentesque euismod velit.
+                                        
+                                    </div>
+                                {/* </li> */}
                                 <div class="tp-caption rs-parallaxlevel-1"
                                     data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power3.inOut"},
                                                 {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
@@ -34,10 +38,10 @@ const Slider = () => {
                                     data-width="['auto']"
                                     data-height="['auto']">
 
-                                    <img src="src/components/images/slider/shape_1.png" alt="App Store" width="359" height="187"></img>
+                                    {/* <img src="src/components/images/slider/shape_1.png" alt="App Store" width="359" height="187"></img> */}
 
                                 </div>
-                                <div class="tp-caption sl1_subtitle ws_nowrap"
+                                <div class="TextArea"
                                         data-x="['left', 'left', 'center', 'center']" 
                                         data-hoffset="['0']" 
 
@@ -90,7 +94,9 @@ const Slider = () => {
                                         data-paddingright="[0,0,0,25]"
                                         data-paddingbottom="[0,0,0,0]"
                                         data-paddingleft="[0,0,0,25]">
-                                        New Portfolio is here!
+                                        {/* New Portfolio is here! */}
+                                        
+                                        
                                 </div>
                                 <div class="tp-caption ws_nowrap wb_all hide_br padding_mobile"
                                         data-x="['left', 'left', 'center', 'center']" 
@@ -120,10 +126,10 @@ const Slider = () => {
                                         data-paddingleft="[0,0,0,30]"
 
                                         >
-                                        <h6> We're glad to announce that we can finally deploy 
+                                        {/* <h6> We're glad to announce that we can finally deploy 
                                         the first version of Juan Mota's Portfolio. Now you 
                                         can search through the app and learn about him and 
-                                        his achievements.</h6>
+                                        his achievements.</h6> */}
                                 </div>
                                 <div class="tp-caption tp-resizeme"
                                         data-x="['left', 'left', 'center', 'center']" 
@@ -166,7 +172,7 @@ const Slider = () => {
                                     
                                     data-visibility="['on', 'on', 'off', 'off']">
 
-                                    <img src="src/components/images/slider/shape_2.png" alt="App Store"></img>
+                                    {/* <img src="src/components/images/slider/shape_2.png" alt="App Store"></img> */}
                                 </div>
                                 <div class="tp-caption rs-parallaxlevel-1 d-md-none d-sm-none d-xs-none d-lg-block"
                                     data-frames='[{"delay":0,"speed":300,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},
@@ -182,7 +188,7 @@ const Slider = () => {
                                     
                                     data-visibility="['on', 'on', 'off', 'off']">
                                         
-                                    <img src="src/components/images/slider/6.png" alt="App Store" width="398" height="694"></img>
+                                    {/* <img src="src/components/images/slider/6.png" alt="App Store" width="398" height="694"></img> */}
                                 </div>
                             </li>
                              <li data-index="rs-3047" data-transition="fadetotopfadefrombottom" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
@@ -196,9 +202,11 @@ const Slider = () => {
                                     data-hoffset="0"
                                     data-voffset="['-33','-33','0','0']"
                                     data-width="['auto']"
-                                    data-height="['auto']"
+                                    data-height="['auto']">
 
-                                ><img src="src/components/images/slider/shape_1.png" alt="App Store" width="359" height="187"></img></div>
+                                    {/* <img src="src/components/images/slider/shape_1.png" alt="App Store" width="359" height="187"></img> */}
+                                </div>
+                                
                                 <div class="tp-caption sl1_subtitle ws_nowrap"
                                         data-x="['left', 'left', 'center', 'center']" 
                                         data-hoffset="['0']" 
@@ -224,9 +232,9 @@ const Slider = () => {
                                         data-paddingtop="[0,0,0,0]"
                                         data-paddingright="[0,0,0,25]"
                                         data-paddingbottom="[0,0,0,0]"
-                                        data-paddingleft="[0,0,0,25]"
+                                        data-paddingleft="[0,0,0,25]">
 
-                                        ></div>
+                                </div>
                                 <div class="tp-caption ws_nowrap"
                                         data-x="['left', 'left', 'center', 'center']" 
                                         data-hoffset="['-3', '-3', '0', '0']" 
@@ -251,9 +259,9 @@ const Slider = () => {
                                         data-paddingtop="[0,0,0,0]"
                                         data-paddingright="[0,0,0,25]"
                                         data-paddingbottom="[0,0,0,0]"
-                                        data-paddingleft="[0,0,0,25]"
-
-                                        >Shoot me a Message!
+                                        data-paddingleft="[0,0,0,25]">
+                                            
+                                            {/* Shoot me a Message! */}
                                 </div>
                                 <div class="tp-caption ws_nowrap wb_all hide_br padding_mobile"
                                         data-x="['left', 'left', 'center', 'center']" 
@@ -283,11 +291,11 @@ const Slider = () => {
                                         data-paddingleft="[0,0,0,30]"
 
                                         >
-                                        <h5>The "Contact Me" feature is now available, 
+                                        {/* <h5>The "Contact Me" feature is now available, 
                                         all you need to do is type your email and 
                                         it will take you to a page to type the 
                                         content of an that will be sent to me directly.
-                                        Let's chat!</h5>
+                                        Let's chat!</h5> */}
                                 </div>
                                 <div class="tp-caption tp-resizeme"
                                         data-x="['left', 'left', 'center', 'center']" 
@@ -332,7 +340,7 @@ const Slider = () => {
                                     
                                     data-visibility="['on', 'on', 'off', 'off']">
 
-                                    <img src="src/components/images/slider/shape_2.png" alt="App Store"></img>
+                                    {/* <img src="src/components/images/slider/shape_2.png" alt="App Store"></img> */}
                                 </div>
                                 <div class="tp-caption rs-parallaxlevel-1 d-md-none d-sm-none d-xs-none d-lg-block"
                                     data-frames='[{"delay":0,"speed":300,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},
@@ -348,7 +356,7 @@ const Slider = () => {
                                     
                                     data-visibility="['on', 'on', 'off', 'off']">
 
-                                    <img src="src/components/images/slider/6.png" alt="App Store" width="398" height="694"></img>
+                                    {/* <img src="src/components/images/slider/6.png" alt="App Store" width="398" height="694"></img> */}
                                 </div>
                             </li>
 
@@ -365,7 +373,7 @@ const Slider = () => {
                                     data-width="['auto']"
                                     data-height="['auto']">
 
-                                    <img src="src/components/images/slider/shape_1.png" alt="App Store" width="359" height="187"></img>
+                                    {/* <img src="src/components/images/slider/shape_1.png" alt="App Store" width="359" height="187"></img> */}
                                 </div>
                                 <div class="tp-caption sl1_subtitle ws_nowrap"
                                         data-x="['left', 'left', 'center', 'center']" 
@@ -449,9 +457,9 @@ const Slider = () => {
                                         data-paddingleft="[0,0,0,30]"
 
                                         >
-                                        <h6>With the announcement of this portfolio, 
+                                        {/* <h6>With the announcement of this portfolio, 
                                         we'll also be adding more features to work with, 
-                                        along with pictures and useful tools.</h6>
+                                        along with pictures and useful tools.</h6> */}
                                 </div>
                                 <div class="tp-caption tp-resizeme"
                                         data-x="['left', 'left', 'center', 'center']" 
@@ -495,7 +503,7 @@ const Slider = () => {
                                     data-height="['auto']"
                                     
                                     data-visibility="['on', 'on', 'off', 'off']">
-                                    <img src="src/components/images/slider/shape_2.png" alt="App Store"></img>
+                                    {/* <img src="src/components/images/slider/shape_2.png" alt="App Store"></img> */}
                                 </div>
                                 <div class="tp-caption rs-parallaxlevel-1 d-md-none d-sm-none d-xs-none d-lg-block"
                                     data-frames='[{"delay":0,"speed":300,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},
@@ -513,7 +521,7 @@ const Slider = () => {
                                         
                                     
                                 </div>
-                            </li> */}
+                            </li>
                         </ul>
                     </div>
                 </div>

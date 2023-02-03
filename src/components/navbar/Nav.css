@@ -1,3 +1,5 @@
+@import url(./../../index.css);
+
 .NavBar{
     position: fixed;
     left: 0;
