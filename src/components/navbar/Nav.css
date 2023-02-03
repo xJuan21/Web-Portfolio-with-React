@@ -1,0 +1,133 @@
+.NavBar{
+    position: fixed;
+    left: 0;
+    /* top: 52px; */
+    width: 100%;
+    z-index: 3;
+    top: -5px;
+    /* max-width: 600px; */
+    min-width: fit-content;
+    /* height: 75px; */
+    /* position: fixed; */
+    /* z-index: 1; */
+    /* transition: 0.5s ease; */
+    /* text-align: center; */
+    font-size: 30px;
+    
+}
+.NavBar.fixedHeader{
+    position: fixed;
+    inline-size: 0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 17px 30px 2px rgba(30, 30, 30, 0.1);
+    z-index: 999;
+}
+.NavBar-bg{
+    margin: auto; /*Keeps Bar centered */
+    align-items: center;
+    justify-content: center;
+    min-width: fit-content;
+    width: fit-content;
+}
+.Options{
+    background: var(--color-primary);
+    border-style: solid;
+    border-color: #2b4b67;
+    border-radius: 0px 0px 50px 50px;
+    border-width: 2px;
+    width:100%;
+    font-family: "Galada";
+
+    -webkit-text-stroke-width: 10px;
+    -webkit-text-stroke:#000;
+    -webkit-text-stroke-color: #000;
+
+    position: relative;
+}
+.Options ul{
+    -webkit-text-stroke-color: black;
+    margin: auto;
+    padding-left: 30px; /*Between Bar and First Option */
+    padding-right: 30px; /*Between Last Option and Bar */
+    width: 100%; 
+    
+    text-align:center; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+}
+.Options ul li{
+    
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
+    list-style: none;
+    inline-size: 170px; /*Max px on each cell */
+    padding: 20px 10px 20px 10px; /*Top and Bottom */
+    margin: 0 0 0 0;
+    position: relative;
+}
+/* .Options ul li:last-child{
+    margin-right: 0;
+} */
+/* .Options > ul > li:before{
+    content: '';
+    position: absolute;
+    left: auto;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0px;
+    background: #FCB525;
+
+    transition: width .4s cubic-bezier(.25,.8,.25,1) 0s;
+    -moz-transition: width .4s cubic-bezier(.25,.8,.25,1) 0s;
+    -webkit-transition: width .4s cubic-bezier(.25,.8,.25,1) 0s;
+} */
+/* .Options > ul > li:hover:before, .Options > ul > li.active:before{
+    width: 100%;
+    right: auto;
+} */
+.Options ul li a{
+    /* Take care of the text in NavBar (Color, Size, Decoration */
+    display: block;
+    font-size: 35px; /*Options Size */
+    color: var(--color-white);
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: black;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+
+    /* line-height: 34px; */
+    /* font-weight: 500; */
+    /* text-transform: capitalize; */
+}
+
+/* Another possibility is only applying when supported: 
+
+@supports (-webkit-text-stroke: 0px black) {
+    .Options ul li a {
+      -webkit-text-stroke: 0px black;
+      -webkit-text-fill-color: white;
+    } 
+}*/
+
+.Options ul li:hover > a, .Options ul li.active > a{
+    color: #FCB525;
+}
+
+.Options > ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
