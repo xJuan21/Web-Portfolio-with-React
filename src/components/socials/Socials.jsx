@@ -5,7 +5,26 @@ import './Socials.css'
 const Socials = () => {
     return (
         <>
-            <hr></hr>
+            <div className='SocialContainer'>
+
+                <div className='Social'>
+                    <a href='https://github.com/xJuan21'>
+                        <img src={require('./icons/github_black.png')} alt="GitHub" ></img>
+                    </a>
+                </div>
+
+                <div className='Social'>
+                    <a href='https://www.linkedin.com/in/juan-mota-sanchez'>
+                        <img src={require('./icons/linkedin_black.png')} alt="LinkedIn" ></img>
+                    </a>
+                </div>
+
+                <div className='Social'>
+                    <a href='https://twitter.com/0xJuan21'>
+                        <img src={require('./icons/twitter_black.png')} alt="Twitter" ></img>
+                    </a>
+                </div>
+            </div>
         </>
     )
 }
