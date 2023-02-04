@@ -3,6 +3,7 @@
 .NavBar{
     position: fixed;
     left: 0;
+    padding-top: 0;
     /* top: 52px; */
     width: 100%;
     z-index: 3;
@@ -39,6 +40,7 @@
     border-color: #2b4b67;
     border-radius: 0px 0px 50px 50px;
     border-width: 2px;
+    /* border-top: 0; */
     width:100%;
     font-family: "Galada";
 
@@ -123,6 +125,8 @@
 
 .Options ul li:hover > a, .Options ul li.active > a{
     color: #FCB525;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
 }
 
 .Options > ul li:hover > ul{

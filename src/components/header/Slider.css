@@ -2,6 +2,8 @@
 
 h1{
     padding-top: 5%;
+    margin-bottom: -30px;
+    z-index: -2;
 }
 .slider_01{
     position: relative;

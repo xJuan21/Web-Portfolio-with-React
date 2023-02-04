@@ -19,6 +19,7 @@
   --color-primary: #3D6180;
   --color-secondary: #AEBDCA;
   --color-secondary-hover: #53626F;
+  --color-text-hover: #D6D9DC;
   --color-secondary-variant: #86A3B8;
   --color-yellow:#ffab00;
   --color-white: #fff;
@@ -248,13 +249,13 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: var(--color-secondary-variant);
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #0056b3;
+  color: var(--color-secondary);
   text-decoration: underline;
 }
 

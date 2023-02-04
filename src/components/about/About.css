@@ -1,0 +1,74 @@
+@import url(./../../index.css);
+
+.AboutHeader{
+    position: relative;
+    font-family: "Galada";
+    color: var(--color-font);
+    /* display: inline-block; */
+    max-width: 1754px;
+    text-align: center;
+    margin: 0px auto;
+    z-index: 2;
+    padding-top: 0.5em;
+    padding-bottom: 1.5em;
+}
+.AboutHeader h2{
+    font-size: 65px;
+}
+.AboutHeader h3{
+    font-size: 50px;
+}
+.HeaderText {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 40px;
+    padding-bottom: 1.5em;
+}
+.AboutContent {
+    /* padding-top: 40px; */
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+    text-align: center;
+    margin: 0px auto;
+    /* grid-template-columns: 700px auto; */
+    /* align-items: center; */
+    /* max-width: 1754px; */
+    /* padding: 0px 30px; */
+}
+.GetToKnow{
+    font-size: 35px;
+    border-right: 1px solid var(--color-font);
+    
+}
+.GetToKnowText{
+    padding-top: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.SkillsContainer{
+    font-size: 35px;
+    padding-top: 20px;
+    padding-left: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.Skill{
+    padding: 0rem 1rem;
+    padding-top: 3px;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    /* font-size: 1.6rem; */
+    background: var(--color-secondary);
+    border-radius: 10px;
+    font-weight: 400;
+}
+.Skill:hover{
+    background: var(--color-secondary-hover);
+    color: var(--color-text-hover);
+    cursor: default;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
