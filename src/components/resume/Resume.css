@@ -1,0 +1,47 @@
+@import url(./../../index.css);
+
+.ResumeContainer {
+    position: relative;
+    display: grid;
+    grid-gap: 0px 10px;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    border: solid;
+    border-color: var(--color-font);
+    border-left: 0;
+    border-right: 0;
+    max-width: 1754px;
+    text-align: center;
+    margin: 0px auto;
+    padding: 2em;
+}
+
+.Resume button{
+    padding:  0.3em 0.5em;
+    font-family: "Galada";
+    font-size: 50px;
+    color: var(--color-white);
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: black;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    border: solid 4px;
+    border-color: #000;
+    background: var(--color-secondary);
+    border-radius: 15px;
+    transition: transform .2s;
+    /* z-index: -5px; */
+}
+
+.Resume button:hover{
+    background: var(--color-secondary-hover);
+    color: var(--color-bg);
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}

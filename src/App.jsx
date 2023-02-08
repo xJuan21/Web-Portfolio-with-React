@@ -21,7 +21,7 @@ function App() {
       <About />
       <Socials />
       {/* <Projects /> */}
-      {/* <Resume /> */}
+      <Resume />
       {/* <Contact /> */}
       {/* <div className="App">
         <header className="App-header">
