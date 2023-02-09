@@ -10,7 +10,7 @@
     margin: 0px auto;
     z-index: 2;
     padding-top: 0.5em;
-    padding-bottom: 5em;
+    /* padding-bottom: 5em; */
 }
 .AboutHeader h2{
     font-size: 65px;
