@@ -41,8 +41,6 @@ const About = () => {
                             <div className='Skill'> Figma</div>
                             <div className='Skill'> UI/UX</div>
                             <div className='Skill'> Scrum</div>
-                            
-
                         </div>
                     </div>
 

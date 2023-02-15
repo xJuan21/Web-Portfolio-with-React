@@ -31,7 +31,6 @@ const Contact = () => {
                     <article className='ContactOption'>
                         <a href='mailto:juanmotasanchez1@gmail.com'>
                             {/* <img src={require('./Rectangle.png')} alt="ContactImg" ></img> */}
-                                {/* <MdOutlineEmail/> */}
                             <h3>Email</h3>
                             <h4>JuanMotaSanchez1@gmail.com</h4>
                         </a>
@@ -39,20 +38,17 @@ const Contact = () => {
 
                     <article className='ContactOption'>
                         <a href='https://api.whatsapp.com/send?phone=16362198733'>
-                            <div className='ContactBg'>
-                                {/* <img src={require('./Rectangle.png')} alt="ContactImg" ></img> */}
-                                <h3>WhatsApp</h3>
-                                <h4>+1 (636) 219-8733</h4>
-                            </div>
+                            {/* <img src={require('./Rectangle.png')} alt="ContactImg" ></img> */}
+                            <h3>WhatsApp</h3>
+                            <h4>+1 (636) 219-8733</h4>
                         </a>
                     </article>
 
                     <article className='ContactOption'>
-                    <a href='https://api.whatsapp.com/send?phone=16362198733'>
-                        {/* <img src={require('./Rectangle.png')} alt="ContactImg" ></img> */}
-                        <h3>LinkedIn</h3>
-                        <h4>Pecheche.com</h4>
-                    </a>
+                        <a href='https://www.linkedin.com/in/juan-mota-sanchez'>
+                            <h3>LinkedIn</h3>
+                            <h4>Juan Mota Sanchez</h4>
+                        </a>
                     </article>
 
                 </div>
@@ -67,7 +63,6 @@ const Contact = () => {
                         <input type="email" name='email' placeholder='Email Address' required />
                         <textarea name='message' rows="7" placeholder='Your Message...' required />
                         <button type='submit' className='SubmissionButton' value="Send">Send Message</button>
-                        {/* <input type="submit" value="Send" /> */}
                     </form>
                 </div>
             </div>

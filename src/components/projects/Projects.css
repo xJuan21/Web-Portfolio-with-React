@@ -1,0 +1,16 @@
+@import url(./../../index.css);
+
+.ProjectSection{
+    position: relative;
+    font-family: "Galada";
+    color: var(--color-font);
+    max-width: 1754px;
+    text-align: center;
+    margin: 0px auto;
+    z-index: 2;
+    padding-top: 0.5em;
+    /* padding-bottom: 5em; */
+}
+.ProjectSection h2{
+    font-size: 65px;
+}

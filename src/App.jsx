@@ -16,14 +16,16 @@ function App() {
     <>
       <NavBar />
       <h1>
+        
         <Header />
       </h1>
+      <section id='About'/>
       <About />
       <Socials />
-      {/* <Projects /> */}
+      <Projects />
       <Resume />
       <Contact />
-      
+
       {/* <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
