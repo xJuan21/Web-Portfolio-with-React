@@ -20,7 +20,7 @@ const Resume = () => {
     }
     return (
         <>
-            <div className='ResumeContainer'>
+            <div id='Resume' className='ResumeContainer'>
 
                 <div className='Resume'>
                     {/* <a href="path_to_file" download="JuanMota_Resume.pdf"> */}

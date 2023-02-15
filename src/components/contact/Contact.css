@@ -63,10 +63,15 @@
     border-right: 2px solid var(--color-bg);
     
 }
+.ContactOption a{
+    color: var(--color-bg);
+    display: block;
+}
 .ContactOption {
     background: var(--color-secondary);
+    color: var(--color-bg);
     padding: 1rem;
-    margin: auto 20%;
+    margin: 1rem 20%;
     border-radius: 1.2rem;
     text-align: center;
     border: 5px solid;
@@ -79,22 +84,16 @@
         1px 1px 0 #000;
     transition: transform .2s;
 }
-.ContactOption a {
-    color: var(--color-bg);
-    font-size: 25px;
-    background: var(--color-font);
-    padding: 0rem 0.5rem;
-    border-radius: 1.5rem;
-}
-/* .ContactOption a:hover {
-    background: #3d6180;
-} */
 .ContactOption:hover{
     background: var(--color-font);
     color: var(--color-bg);
     transform: scale(1.2);
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
+}
+.ClickableArea-Contact{
+    margin: 0;
+    padding: 0;
 }
 .RightContainer form{
     margin: 1rem 3rem;
@@ -138,4 +137,20 @@ textarea{
     transform: scale(1.1);
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
+}
+/* ============ MEDIUM DEVICES ============ */
+@media screen and (max-width: 1024px) {
+    .ContactContainer{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .LeftContainer{
+        border-right: 0px;
+    }
+}
+/* ============ SMALL DEVICES ============ */
+@media screen and (max-width: 600px) {
+    .ContactContainer{
+        width: var(--container-width-sm);
+    }
 }
