@@ -5,6 +5,7 @@ import './Socials.css'
 const Socials = () => {
     return (
         <>
+        <section className='SocialSection'>
             <div className='SocialContainer'>
 
                 <div className='Social'>
@@ -25,6 +26,7 @@ const Socials = () => {
                     </a>
                 </div>
             </div>
+        </section>
         </>
     )
 }

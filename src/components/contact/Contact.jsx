@@ -25,11 +25,12 @@ const Contact = () => {
 
     return (
         <>
+        <section className='ContactSection'>
             <div id='Contact' className='ContactContainer'>
                 <div className='LeftContainer'>
 
                     <article className='ContactOption'>
-                        <a href='mailto:juanmotasanchez1@gmail.com'>
+                        <a href='mailto:juanmotasanchez1@gmail.com' target='_blank'>
                             {/* <img src={require('./Rectangle.png')} alt="ContactImg" ></img> */}
                             <h3>Email</h3>
                             <h4>JuanMotaSanchez1@gmail.com</h4>
@@ -37,7 +38,7 @@ const Contact = () => {
                     </article>
 
                     <article className='ContactOption'>
-                        <a href='https://api.whatsapp.com/send?phone=16362198733'>
+                        <a href='https://api.whatsapp.com/send?phone=16362198733' target='_blank'>
                             {/* <img src={require('./Rectangle.png')} alt="ContactImg" ></img> */}
                             <h3>WhatsApp</h3>
                             <h4>+1 (636) 219-8733</h4>
@@ -45,7 +46,7 @@ const Contact = () => {
                     </article>
 
                     <article className='ContactOption'>
-                        <a href='https://www.linkedin.com/in/juan-mota-sanchez'>
+                        <a href='https://www.linkedin.com/in/juan-mota-sanchez' target='_blank'>
                             <h3>LinkedIn</h3>
                             <h4>Juan Mota Sanchez</h4>
                         </a>
@@ -62,10 +63,11 @@ const Contact = () => {
                         <input type="text" name='Name' placeholder='Full Name' required />
                         <input type="email" name='email' placeholder='Email Address' required />
                         <textarea name='message' rows="7" placeholder='Your Message...' required />
-                        <button type='submit' className='SubmissionButton' value="Send">Send Message</button>
+                        <button type='submit' className='SubmissionButton' value="Send">Send</button>
                     </form>
                 </div>
             </div>
+        </section>
         </>
     )
 }

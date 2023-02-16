@@ -1,6 +1,6 @@
 @import url(./../../index.css);
 
-.ProjectSection{
+.ProjectContainer{
     position: relative;
     font-family: "Galada";
     color: var(--color-font);
@@ -11,6 +11,107 @@
     padding-top: 0.5em;
     /* padding-bottom: 5em; */
 }
-.ProjectSection h2{
+.ProjectContainer h2{
     font-size: 65px;
+    margin-bottom: 0px;
+}
+.CategoriesList{
+    font-size: 30px;
+    margin: auto 10%;
+    /* padding-left: 2em; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.Category{
+    padding: 0rem 1rem;
+    padding-top: 3px;
+    margin: 0.5rem 0.5rem;
+    transition: transform .2s;
+    /* font-size: 1.6rem; */
+    background: var(--color-secondary);
+    border-radius: 10px;
+    font-weight: 400;
+}
+.Category:hover{
+    background: var(--color-secondary-hover);
+    color: var(--color-text-hover);
+    transform: scale(1.1);
+    cursor:pointer;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+
+input { display: none;}
+
+.carousel {
+    /* overflow: hidden; */
+    position: relative;
+    width: 100%;
+    margin-top: 10em;
+}
+.carousel-controls{
+    height: 100%;
+    justify-content: flex-end;
+}
+.carousel-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: 0.5s;
+  }
+  
+  .carousel img {
+    width: 100%;
+    object-fit: cover;
+  }
+.carousel-controls, .dots {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+label {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #567189;
+    transition: 0.3s;
+}
+.dots {
+    left: 0;
+    bottom: 0;
+    height: 400px;
+    /* background:  */
+        /* linear-gradient(transparent, #000 90%); */
+    gap: 12px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+input:nth-child(1):checked ~ .dots label:nth-child(1),
+input:nth-child(2):checked ~ .dots label:nth-child(2),
+input:nth-child(3):checked ~ .dots label:nth-child(3) {
+  background: var(--color-secondary);
+  opacity: 1;
+  backdrop-filter: none;
+}
+
+input:nth-child(1):checked ~ .carousel-images {
+  translate: 0;
+}
+
+input:nth-child(2):checked ~ .carousel-images {
+  translate: -100vw;
+}
+
+input:nth-child(3):checked ~ .carousel-images {
+  translate: -200vw;
 }

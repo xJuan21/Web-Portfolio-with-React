@@ -1,7 +1,13 @@
 @import url(./../../index.css);
 
-.SocialContainer {
+.SocialSection {
     position: relative;
+    margin: 4em auto;
+    max-width: 1754px;
+    align-items: center;
+}
+.SocialContainer {
+    
     display: grid;
     grid-gap: 0px 10px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -10,11 +16,9 @@
     border-color: var(--color-font);
     border-left: 0;
     border-right: 0;
-    max-width: 1754px;
     text-align: center;
-    margin: 0px auto;
-    margin-top: 5em;
-    margin-bottom: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 2em;
 }
 
