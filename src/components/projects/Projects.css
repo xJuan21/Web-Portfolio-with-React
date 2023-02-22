@@ -43,6 +43,29 @@
 
 input { display: none;}
 
+.ProjectsContainer {
+  padding-top: 5em;
+  padding-bottom: 2em;
+  margin: auto 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+.Project_item {
+  background: #D6D9DC 59%;
+  padding: 0.5em;
+  border-radius: 2rem;
+  border: 5px solid transparent;
+  border-color: var(--color-secondary-hover);
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+}
+
+.Project_item:hover{
+  background: var(--color-secondary-hover);
+  color: var(--color-text-hover);
+}
+
 .carousel {
     /* overflow: hidden; */
     position: relative;
@@ -64,10 +87,10 @@ input { display: none;}
     transition: 0.5s;
   }
   
-  .carousel img {
-    width: 100%;
-    object-fit: cover;
-  }
+.carousel img {
+  width: 100%;
+  object-fit: cover;
+}
 .carousel-controls, .dots {
     position: absolute;
     z-index: 2;
@@ -88,7 +111,7 @@ label {
 .dots {
     left: 0;
     bottom: 0;
-    height: 400px;
+    /* height: 400px; */
     /* background:  */
         /* linear-gradient(transparent, #000 90%); */
     gap: 12px;

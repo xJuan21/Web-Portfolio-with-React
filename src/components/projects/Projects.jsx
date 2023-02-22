@@ -25,6 +25,52 @@ const Projects = () => {
                         {/* <li className='Category'> UI/UX</li> */}
                         {/* <li className='Category'> Scrum</li> */}
                     </ul>
+
+                    <div className='ProjectsContainer'>
+
+                        <article className='Project_item'>
+                            <div className="Project_item-image"></div>
+                            <h3> Project Title</h3>
+                            <a href='https://github.com' className='btn' target='_blank'>GitHub</a>
+                            <a href='https://github.com' className='btn' target='_blank'>Live Demo</a>
+                        </article>
+
+                        <article className='Project_item'>
+                            <div className="Project_item-image"></div>
+                            <h3> Project Title</h3>
+                            <a href='https://github.com' className='btn' target='_blank'>GitHub</a>
+                            <a href='https://github.com' className='btn' target='_blank'>Live Demo</a>
+                        </article>
+
+                        <article className='Project_item'>
+                            <div className="Project_item-image"></div>
+                            <h3> Project Title</h3>
+                            <a href='https://github.com' className='btn' target='_blank'>GitHub</a>
+                            <a href='https://github.com' className='btn' target='_blank'>Live Demo</a>
+                        </article>
+
+                        <article className='Project_item'>
+                            <div className="Project_item-image"></div>
+                            <h3> Project Title</h3>
+                            <a href='https://github.com' className='btn' target='_blank'>GitHub</a>
+                            <a href='https://github.com' className='btn' target='_blank'>Live Demo</a>
+                        </article>
+
+                        <article className='Project_item'>
+                            <div className="Project_item-image"></div>
+                            <h3> Project Title</h3>
+                            <a href='https://github.com' className='btn' target='_blank'>GitHub</a>
+                            <a href='https://github.com' className='btn' target='_blank'>Live Demo</a>
+                        </article>
+
+                        <article className='Project_item'>
+                            <div className="Project_item-image"></div>
+                            <h3> Project Title</h3>
+                            <a href='https://github.com' className='btn' target='_blank'>GitHub</a>
+                            <a href='https://github.com' className='btn' target='_blank'>Live Demo</a>
+                        </article>
+                    </div>
+
                     <div className='carousel'>
                         <div className='carousel-controls'>
                             <input

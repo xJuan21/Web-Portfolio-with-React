@@ -20,14 +20,16 @@ const Resume = () => {
     }
     return (
         <>
-            <div id='Resume' className='ResumeContainer'>
+            <section className='ResumeSection'>
+                <div id='Resume' className='ResumeContainer'>
 
-                <div className='Resume'>
-                    {/* <a href="path_to_file" download="JuanMota_Resume.pdf"> */}
-                        <button onClick={ResumeButtonOnClick}>Download Resume</button>
-                    {/* </a> */}
+                    <div className='Resume'>
+                        {/* <a href="path_to_file" download="JuanMota_Resume.pdf"> */}
+                            <button onClick={ResumeButtonOnClick}>Download Resume</button>
+                        {/* </a> */}
+                    </div>
                 </div>
-            </div>
+            </section>
         </>
     )
 }
