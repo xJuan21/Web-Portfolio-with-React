@@ -41,10 +41,10 @@
     -webkit-transition: all .4s ease;
 }
 
-input { display: none;}
+.carousel-controls input { display: none;}
 
 .ProjectsContainer {
-  padding-top: 5em;
+  padding-top: 4em;
   padding-bottom: 2em;
   margin: auto 10%;
   display: grid;
@@ -57,13 +57,17 @@ input { display: none;}
   border-radius: 2rem;
   border: 5px solid transparent;
   border-color: var(--color-secondary-hover);
-  transition: all .4s ease;
-  -webkit-transition: all .4s ease;
+  transition: transform .2s;
+  
 }
 
 .Project_item:hover{
   background: var(--color-secondary-hover);
   color: var(--color-text-hover);
+  transform: scale(1.1);
+  cursor:pointer;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
 }
 
 .carousel {
