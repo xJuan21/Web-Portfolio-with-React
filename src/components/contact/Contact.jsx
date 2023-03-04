@@ -30,6 +30,9 @@ const Contact = () => {
                 <div className='LeftContainer'>
 
                     <article className='ContactOption'>
+                        <div className="ContactImg">
+                            
+                        </div>
                         <a href='mailto:juanmotasanchez1@gmail.com' target='_blank'>
                             {/* <img src={require('./Rectangle.png')} alt="ContactImg" ></img> */}
                             <h3>Email</h3>
@@ -38,6 +41,9 @@ const Contact = () => {
                     </article>
 
                     <article className='ContactOption'>
+                        <div className="ContactImg">
+
+                        </div>
                         <a href='https://api.whatsapp.com/send?phone=16362198733' target='_blank'>
                             {/* <img src={require('./Rectangle.png')} alt="ContactImg" ></img> */}
                             <h3>WhatsApp</h3>
@@ -46,6 +52,9 @@ const Contact = () => {
                     </article>
 
                     <article className='ContactOption'>
+                            <div className="ContactImg">
+                            
+                            </div>
                         <a href='https://www.linkedin.com/in/juan-mota-sanchez' target='_blank'>
                             <h3>LinkedIn</h3>
                             <h4>Juan Mota Sanchez</h4>

@@ -19,7 +19,6 @@ function App() {
         
         <Header />
       </h1>
-      <section id='About'/>
       <About />
       <Socials />
       <Projects />

@@ -5,6 +5,7 @@ import './About.css'
 const About = () => {
     return (
         <>
+        <section className='AboutSection'>
             <div id="About" className='AboutHeader'>
                 <h2>About Me</h2>
 
@@ -46,7 +47,7 @@ const About = () => {
 
                 </div>
             </div>
-
+        </section>
         </>
     )
 }
