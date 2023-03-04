@@ -14,7 +14,7 @@ const data = [
         title: 'Poly Calculator',
         github: 'https://github.com/xJuan21/PolyCalculator-w-Stack',
         description: 'Polynomial Calculator made with a Stack. User can add, subtract, multiply, or divide polynomial expressions.',
-        category: ["C++", "Linux"]
+        category: ["Backend", "C++", "Linux"]
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ const data = [
         title: 'Sudoku Solver',
         github: 'https://github.com/xJuan21/SudokuSolver',
         description: 'A program that will interpret a Sudoku puzzle from a .txt file and recursively solve it and print it in the terminal.',
-        category: ["C++", "Linux"]
+        category: ["Backend", "C++", "Linux"]
     },
     {
         id: 3,
@@ -44,7 +44,7 @@ const data = [
         title: 'Project Title',
         github: 'https://github.com/xJuan21/PolyCalculator-w-Stack',
         description: 'Brief Description',
-        category: ['SQL']
+        category: ["Backend", "Database","PHP"]
     },
     {
         id: 5,
@@ -54,7 +54,7 @@ const data = [
         title: 'Project Title',
         github: 'https://github.com/xJuan21/PolyCalculator-w-Stack',
         description: 'Brief Description',
-        category: ['C++']
+        category: ["Backend", 'C++', "Windows"]
     },
     {
         id: 6,
@@ -64,7 +64,7 @@ const data = [
         title: 'Project Title',
         github: 'https://github.com/xJuan21/PolyCalculator-w-Stack',
         description: 'Brief Description',
-        category: ['C++']
+        category: ["Frontend", 'C++', "Windows"]
     }
 ]
 export default data;

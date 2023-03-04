@@ -11,25 +11,51 @@ function Projects(){
     //Create useState to get the projects from Data.jsx
     const [data, setData] = useState(Data);
 
+    //Extract the 'category' value(s) for each index in Data
     const categoryData = Data.map((value)=>{
           return value.category
      });
 
+    //Create a Set that will take care of duplicates in JSON
+    const categorySet = () => {
+
+        //Empty Set for now
+        let noDuplicates = new Set();
+
+        //Populate 'noDuplicates' with values found in categoryData 2D Array
+        for(var i=0; i<categoryData.length; i++)
+        {
+            //Iterate through each slot in 'category' array
+            for(var j=0; j<categoryData[i].length; j++)
+            {
+                //console.log(categoryData);
+                //If current element is not found in noDuplicates Set, add it.
+                if(!noDuplicates.has(categoryData[i][j]))
+                {
+                    noDuplicates.add(categoryData[i][j]);
+                }
+            }
+        }
+        //Finally, return noDuplicates Set without Duplicates
+        return noDuplicates;
+    }
+
     //Create an array of strings which will represent each 'Tab'
-    const tabsData= ["All", ...new Set(categoryData)];
+    //Merge Set of Categories found in Data.jsx without duplicates.
+    const tabsData= ["All", ...categorySet()];
+    console.log(tabsData);
     
+    //Function to be used when one of the tabs is clicked.
+    //Main purpose is to select each Project that contains the same Category.
+    // For Example: Display only projects that were written on C++.
     const filterCategory=(category) =>{
 
-            //     if(category=="all"){
-            //         setData(Data);
-            //         return;
-            //     }
             //    const filteredData =  Data.filter((value)=>{
             //        return value.category == category;
             //    })
             //    setData(filteredData);
 
-        //If Tab "All is pressed, Display them all"
+        //If Tab "All" is pressed, Display them all
         if(category=="All")
         {
             setData(Data);//Set Current vaue of data to its default value (Not filtered)
@@ -37,7 +63,6 @@ function Projects(){
         }
     
         //Used to display specific items (Projects) that make part of the specific category
-        // For Example: Display only projects that were written on C++.
        const filteredData =  Data.filter((value)=>
        {
 
