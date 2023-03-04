@@ -1,5 +1,5 @@
 import React from 'react'
-import Data from "./Data.jsx";
+import Data from "./Data.jsx"; // File with JSON Array of projects
 import Items from './Items';
 import Tabs from './Tabs';
 import { useState } from "react";
@@ -8,67 +8,90 @@ import './Projects.css'
 // import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 function Projects(){
+    //Create useState to get the projects from Data.jsx
     const [data, setData] = useState(Data);
+
     const categoryData = Data.map((value)=>{
           return value.category
      });
-    const tabsData= [["All"], ...new Set(categoryData)];
+
+    //Create an array of strings which will represent each 'Tab'
+    const tabsData= ["All", ...new Set(categoryData)];
     
     const filterCategory=(category) =>{
-        if(category=="All"){
-            setData(Data);
+
+            //     if(category=="all"){
+            //         setData(Data);
+            //         return;
+            //     }
+            //    const filteredData =  Data.filter((value)=>{
+            //        return value.category == category;
+            //    })
+            //    setData(filteredData);
+
+        //If Tab "All is pressed, Display them all"
+        if(category=="All")
+        {
+            setData(Data);//Set Current vaue of data to its default value (Not filtered)
             return;
         }
-       const filteredData =  Data.filter((value)=>{
-        for(var i=0; i<value.category.length; i++)
-        {
-            if(value.category[i] == category)
-            {
-                return value.category == category;
-            }else
-            {
-                setData(Data);
-                return;
-            }
-        }
-           
+    
+        //Used to display specific items (Projects) that make part of the specific category
+        // For Example: Display only projects that were written on C++.
+       const filteredData =  Data.filter((value)=>
+       {
+
+
+            // for(var i=0; i<value.category.length; i++)
+            // {
+                // if(value.category[i] == category)
+                // {
+                   return value.category == category;
+                // }else
+                // {
+                    // setData(Data);
+                    // return;
+                // }
+            // }
        })
+
        setData(filteredData);
     }
+    
     return(
         <>
-        <section className='ProjectSection'>
-            <div className='ProjectContainer'>
-                <h2>Projects</h2>
+            <section className='ProjectSection'>
+                <div className='ProjectContainer'>
+                    <h2>Projects</h2>
+                    
+                    <div className="ProjectMenu">
+                        <Tabs filterCategory={filterCategory} tabsData={tabsData}/>
+                    </div>
+                    
+                    <Items data={data} />
                 
-                <div className="ProjectMenu">
-                    <Tabs filterCategory={filterCategory} tabsData={tabsData}/>
-                </div>
-                
-                <Items data={data} />
-            
-                <div className='carousel'>
-                        <div className='carousel-controls'>
-                            <input
-                                id="1"
-                                type="radio"
-                                name="controls"
-                                checked
-                            />
-                            <input id="2" type="radio" name="controls" />
-                            <input id="3" type="radio" name="controls" />
+                    <div className='carousel'>
+                            <div className='carousel-controls'>
+                                <input
+                                    id="1"
+                                    type="radio"
+                                    name="controls"
+                                    checked
+                                />
+                                <input id="2" type="radio" name="controls" />
+                                <input id="3" type="radio" name="controls" />
 
-                            <div className='dots'>
-                                <label for="1"/>
-                                <label for="2"/>
-                                <label for="3"/>
+                                <div className='dots'>
+                                    <label for="1"/>
+                                    <label for="2"/>
+                                    <label for="3"/>
+                                </div>
+                                <div className='carousel-images'>
+                                </div>
                             </div>
-                            <div className='carousel-images'>
-                            </div>
-                        </div>
+                    </div>
                 </div>
-            </div>
-       </section>
+        </section>
     </>
     )
 }

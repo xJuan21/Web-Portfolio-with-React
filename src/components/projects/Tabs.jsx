@@ -7,8 +7,8 @@ function Tabs({filterCategory, tabsData}){
                     <>
                         <ul className='CategoriesList'>
                             <li>
-                            <button type="button" className="Category" onClick={()=> filterCategory(category[0])} key={index}>
-                                {category[0]}
+                            <button type="button" className="Category" onClick={()=> filterCategory(category)} key={index}>
+                                {category}
                             </button>
                             </li>
                         </ul>
