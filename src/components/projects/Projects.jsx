@@ -43,7 +43,7 @@ function Projects(){
     //Create an array of strings which will represent each 'Tab'
     //Merge Set of Categories found in Data.jsx without duplicates.
     const tabsData= ["All", ...categorySet()];
-    console.log(tabsData);
+    //console.log(tabsData);
     
     //Function to be used when one of the tabs is clicked.
     //Main purpose is to select each Project that contains the same Category.
@@ -65,13 +65,18 @@ function Projects(){
         //Used to display specific items (Projects) that make part of the specific category
        const filteredData =  Data.filter((value)=>
        {
-
-
-            // for(var i=0; i<value.category.length; i++)
-            // {
-                // if(value.category[i] == category)
-                // {
-                   return value.category == category;
+        for(var i=0; i<Data.length; i++)
+        {
+            //Iterate through each slot in 'category' array
+            for(var j=0; j<categoryData[i].length; j++)
+            {
+                if(value.category[j] == category)
+                {
+                    console.log(value.category[j]);
+                   return value.category[j] == category;
+                }
+            }
+        }
                 // }else
                 // {
                     // setData(Data);
