@@ -50,11 +50,6 @@ function Projects(){
     // For Example: Display only projects that were written on C++.
     const filterCategory=(category) =>{
 
-            //    const filteredData =  Data.filter((value)=>{
-            //        return value.category == category;
-            //    })
-            //    setData(filteredData);
-
         //If Tab "All" is pressed, Display them all
         if(category=="All")
         {
@@ -77,12 +72,6 @@ function Projects(){
                 }
             }
         }
-                // }else
-                // {
-                    // setData(Data);
-                    // return;
-                // }
-            // }
        })
 
        setData(filteredData);
