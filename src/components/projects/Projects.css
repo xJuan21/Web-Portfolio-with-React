@@ -71,8 +71,7 @@
   border-radius: 2rem;
   border: 5px solid transparent;
   border-color: var(--color-secondary-hover);
-  transition: transform .2s;
-  
+  transition: transform .2s;  
 }
 
 .Project_item:hover{
@@ -141,6 +140,11 @@
   margin: 1rem;
   text-align: left;
   font-size: 20px;
+}
+.carousel .carousel-slider{
+}
+.carousel-root .control-dots {
+  margin: -5px 0;
 }
 .carousel {
     /* overflow: hidden; */

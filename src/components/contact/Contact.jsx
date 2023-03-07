@@ -27,14 +27,13 @@ const Contact = () => {
         <>
         <section className='ContactSection'>
             <div id='Contact' className='ContactContainer'>
-                <div className='LeftContainer'>
+                {/* <div className='LeftContainer'>
 
                     <article className='ContactOption'>
                         <div className="ContactImg">
                             
                         </div>
                         <a href='mailto:juanmotasanchez1@gmail.com' target='_blank'>
-                            {/* <img src={require('./Rectangle.png')} alt="ContactImg" ></img> */}
                             <h3>Email</h3>
                             <h4>JuanMotaSanchez1@gmail.com</h4>
                         </a>
@@ -45,7 +44,6 @@ const Contact = () => {
 
                         </div>
                         <a href='https://api.whatsapp.com/send?phone=16362198733' target='_blank'>
-                            {/* <img src={require('./Rectangle.png')} alt="ContactImg" ></img> */}
                             <h3>WhatsApp</h3>
                             <h4>+1 (636) 219-8733</h4>
                         </a>
@@ -61,7 +59,7 @@ const Contact = () => {
                         </a>
                     </article>
 
-                </div>
+                </div> */}
                 <div className='RightContainer'>
 
                     <div className='Subtitle'>

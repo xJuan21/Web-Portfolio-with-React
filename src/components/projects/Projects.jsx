@@ -2,10 +2,32 @@ import React from 'react'
 import Data from "./Data.jsx"; // File with JSON Array of projects
 import Items from './Items';
 import Tabs from './Tabs';
+import Pagination from './Pagination.jsx';
 import { useState } from "react";
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './Projects.css'
 
 // import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+// const responsive = {
+//     superLargeDesktop: {
+//       // the naming can be any, depends on you.
+//       breakpoint: { max: 4000, min: 3000 },
+//       items: 5
+//     },
+//     desktop: {
+//       breakpoint: { max: 3000, min: 1024 },
+//       items: 3
+//     },
+//     tablet: {
+//       breakpoint: { max: 1024, min: 464 },
+//       items: 2
+//     },
+//     mobile: {
+//       breakpoint: { max: 464, min: 0 },
+//       items: 1
+//     }
+//   };
 
 function Projects(){
     //Create useState to get the projects from Data.jsx
@@ -87,28 +109,16 @@ function Projects(){
                         <Tabs filterCategory={filterCategory} tabsData={tabsData}/>
                     </div>
                     
-                    <Items data={data} />
-                
-                    <div className='carousel'>
-                            <div className='carousel-controls'>
-                                <input
-                                    id="1"
-                                    type="radio"
-                                    name="controls"
-                                    checked
-                                />
-                                <input id="2" type="radio" name="controls" />
-                                <input id="3" type="radio" name="controls" />
-
-                                <div className='dots'>
-                                    <label for="1"/>
-                                    <label for="2"/>
-                                    <label for="3"/>
-                                </div>
-                                <div className='carousel-images'>
-                                </div>
-                            </div>
+                    <div className="Project_pagination">
+                        {/* <Items data={data} /> */}
+                        <Pagination ItemsList={data} ItemsPerPage={3} />
+                    </div>                    
+                {/* {paginationVisible ? 
+                (
+                    <div className="Project_pagination">
+                        <Pagination setValue={(i) => changeThePage(i)} />
                     </div>
+                ) : null} */}
                 </div>
         </section>
     </>

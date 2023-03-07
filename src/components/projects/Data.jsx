@@ -4,6 +4,7 @@ import Windows from './Logos/WindowsLogo.png'
 import CPP from './Logos/C++Color.png'
 import SQL from './Logos/MySQL-Logo.png'
 import PHP from './Logos/PHPLogo.png'
+import JavaScript from './Logos/JS_Logo.png'
 
 const data = [
     {
@@ -65,6 +66,16 @@ const data = [
         github: 'https://github.com/xJuan21/PolyCalculator-w-Stack',
         description: 'Brief Description',
         category: ["Frontend", 'C++', "Windows"]
+    },
+    {
+        id: 7,
+        image: IMG1,
+        platform: Windows,
+        language: JavaScript,
+        title: 'Web Portfolio',
+        github: 'https://github.com/xJuan21/PolyCalculator-w-Stack',
+        description: 'Brief Description',
+        category: ["Frontend", "JavaScript", "Windows"]
     }
 ]
 export default data;

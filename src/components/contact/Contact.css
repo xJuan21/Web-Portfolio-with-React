@@ -5,32 +5,33 @@
     margin: 4em auto;
     max-width: 1754px;
     align-items: center;
+    padding: 5em;
 }
 .ContactContainer{
     
     font-family: "Galada";
     background-color: #86A3B8;
+    display:grid;
 
-
-    display: grid;
+    /* display: grid;
     grid-gap: 0px 10px;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 0;
+    grid-gap: 0;*/
     
     border: solid 10px;
-    border-color: var(--color-font);
+    border-color: var(--color-font); 
     border-radius: 25px;
 
     /* max-width: 1754px; */
     text-align: center;
     
     /* z-index: 2; */
-    padding: 1em;
+    padding: 2em 5em;
     /* padding-right: 4em; */
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-top: 3em;
-    padding-bottom: 3em;
+    margin-left: 15%;
+    margin-right: 15%;
+    /* padding-top: 3em; */
+    /* padding-bottom: 1em; */
 }
 .ContactContainer h2{
     color: var(--color-bg);
@@ -56,7 +57,7 @@
     /* max-width: 1754px; */
     /* padding: 0px 30px; */
 }
-.LeftContainer{
+/* .LeftContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,7 +65,7 @@
     font-size: 35px;
     border-right: 2px solid var(--color-bg);
     
-}
+} */
 .ContactOption a{
     color: var(--color-bg);
     display: block;
@@ -105,7 +106,7 @@
     padding: 0;
 }
 .RightContainer form{
-    margin: 1rem 3rem;
+    margin: 0 3rem;
     display: flex;
     flex-direction: column;
     /* gap: 2rem; */
@@ -154,11 +155,11 @@ textarea{
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-    .LeftContainer{
+    /* .LeftContainer{
         border-right: 0px;
         padding-bottom: 48px;
         border-bottom: 2px solid var(--color-bg);
-    }
+    } */
     .AboutContent{
         grid-template-columns: 1fr;
         gap: 3rem;

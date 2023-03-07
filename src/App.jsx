@@ -14,7 +14,7 @@ import Contact from './components/contact/Contact'
 function App() {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <h1>
         
         <Header />
