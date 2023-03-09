@@ -1,0 +1,18 @@
+.pagination{
+    position: relative;
+    margin: auto;
+
+    font-size: 30px;
+    /* word-spacing: 50px; */
+
+    color: var(--color-font);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.pagination .selected {
+    background-color: transparent;
+    color: var(--color-primary);
+    font-weight: bold;
+    transform: scale(1.3);
+  }

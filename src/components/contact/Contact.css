@@ -2,7 +2,7 @@
 
 .ContactSection {
     /* position: relative; */
-    margin: 4em auto;
+    margin: 2rem auto;
     max-width: 1754px;
     align-items: center;
     padding: 5em;
@@ -12,6 +12,7 @@
     font-family: "Galada";
     background-color: #86A3B8;
     display:grid;
+    grid-gap: 0px;
 
     /* display: grid;
     grid-gap: 0px 10px;
@@ -26,10 +27,10 @@
     text-align: center;
     
     /* z-index: 2; */
-    padding: 2em 5em;
+    padding: 2em 10em;
     /* padding-right: 4em; */
-    margin-left: 15%;
-    margin-right: 15%;
+    margin: 0 20%;
+    /* margin-right: 15%; */
     /* padding-top: 3em; */
     /* padding-bottom: 1em; */
 }
@@ -105,12 +106,7 @@
     margin: 0;
     padding: 0;
 }
-.RightContainer form{
-    margin: 0 3rem;
-    display: flex;
-    flex-direction: column;
-    /* gap: 2rem; */
-}
+
 input, 
 textarea{
     display: grid;
@@ -127,8 +123,8 @@ textarea{
     background: var(--color-secondary);
     /* margin-top: 4rem; */
     margin: 1.3rem 30%;
-    padding: 0.5rem;
-    font-size: 35px;
+    padding: 0px 50px;
+    font-size: 40px;
     color: var(--color-bg);
 
     border-radius: 3rem;
@@ -151,15 +147,27 @@ textarea{
 }
 /* ============ MEDIUM DEVICES ============ */
 @media screen and (max-width: 1024px) {
+    .rev_slider_wrapper .ImageSection{
+        display: none;
+    }
+    .rev_slider_wrapper{
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    .ContactSection{
+        padding: 5%;
+    }
     .ContactContainer{
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 1rem;
+        width: var(--container-width-md);
+        padding: 2rem 2.5rem;
+        margin: auto;
     }
-    /* .LeftContainer{
-        border-right: 0px;
-        padding-bottom: 48px;
-        border-bottom: 2px solid var(--color-bg);
-    } */
+
+    .AboutHeader{
+        margin: auto 5%;
+    }
     .AboutContent{
         grid-template-columns: 1fr;
         gap: 3rem;
@@ -168,11 +176,56 @@ textarea{
     }
     .GetToKnow{
         border-right: 0px;
+        padding: 0;
+    }
+    .SkillSet{
+        margin: auto;
+    }
+    .Subtitle h2{
+        padding-top: 10px;
+        display:inline;
+        font-size: 80px;
+    }
+    .SubmissionButton{
+        margin: auto;
+        margin-top: 1rem;
+        padding: 0px 50px;
+        font-size: 35px;
     }
 }
 /* ============ SMALL DEVICES ============ */
 @media screen and (max-width: 600px) {
+    .rev_slider_wrapper .ImageSection img{
+        display: none;
+    }
+    .rev_slider_wrapper, .rev_slider ul li .TextArea{
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .Resume button{
+        font-size: 23px;
+    }
     .ContactContainer{
         width: var(--container-width-sm);
+        padding: 1em;
+        margin: auto;
+    }
+    .Subtitle h2{
+        padding-top: 10px;
+        display:inline;
+        font-size: 65px;
+    }
+    input, textarea{
+        font-size: 20px;
+        justify-content: center;
+        padding: 0.5rem;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+    .SubmissionButton{
+        margin: auto;
+        padding: 0px 30px;
     }
 }

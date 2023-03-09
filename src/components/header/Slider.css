@@ -12,8 +12,6 @@ h1{
     background-position:center;
     background-repeat: no-repeat;
     /* display: flex; */
-    display: grid;
-    grid-template-columns: 500px auto;
     max-width: 1754px;
     margin: 0px auto;
     padding: 0px 30px;
@@ -36,22 +34,25 @@ h1{
 .ws_nowrap{
     white-space: normal !important;
 }
-.rev_slider {
+.rev_slider_wrapper {
     margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     width: fit-content;
     align-items: center;
     justify-content: center;
     min-width: fit-content;
-    display: inline-block;
+    /* display: inline-block; */
 }
-.rev_slider ul li{
+.rev_slider_wrapper ul li{
     word-wrap: break-word;
     align-items: center;
     justify-content: center;
     min-width: fit-content;
     display: inline-block;
 }
-.rev_slider ul li .ImageSection {
+.rev_slider_wrapper ul li .ImageSection {
     float: left;
     /* margin-bottom: 0; */
     position:absolute;
@@ -69,14 +70,14 @@ h1{
     /* -webkit-user-select: none; */
 }
 
-.rev_slider ul li img {
+.rev_slider_wrapper ul li img {
     float: left;
     margin-bottom: 0px;
     max-width: none !important;
     padding: 5px;
     /* overflow: clip; */
 }
-.rev_slider ul li .TextArea {
+.rev_slider_wrapper ul li .TextArea {
     /* width: 100%; */
     /* float: right; */
     /* word-wrap: break-word; */
@@ -102,7 +103,7 @@ h1{
         -1px 1px 0 #000,
         1px 1px 0 #000;
 }
-.rev_slider ul li h2{
+.rev_slider_wrapper ul li h2{
     font-size: 80px;
     padding-bottom: 15px;
 }
@@ -164,7 +165,6 @@ h1{
     color: #FFF;
     font-size: 16px;
     font-weight: 500 !important;
-    display: inline-block;
     text-align: center !important;
 
     transition: all ease 300ms !important;

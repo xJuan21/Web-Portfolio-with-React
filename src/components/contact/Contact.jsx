@@ -60,7 +60,7 @@ const Contact = () => {
                     </article>
 
                 </div> */}
-                <div className='RightContainer'>
+                {/* <div className='RightContainer'> */}
 
                     <div className='Subtitle'>
                         <h2>Contact Me</h2>
@@ -73,7 +73,7 @@ const Contact = () => {
                         <button type='submit' className='SubmissionButton' value="Send">Send</button>
                     </form>
                 </div>
-            </div>
+            {/* </div> */}
         </section>
         </>
     )
