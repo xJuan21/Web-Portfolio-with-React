@@ -234,6 +234,28 @@ input:nth-child(3):checked ~ .carousel-images {
     justify-content: center;
     gap: 1.5rem;
   }
+  .ProjectContainer h2{
+    margin-bottom: auto;
+  }
+  .ProjectMenu{
+    padding-top: 5px;
+  }
+  .ProjectMenu .CategoriesList{
+    color: black;
+    font-size: 20px;
+  }
+  .Category{
+    color: black;
+    font-size: 20px;
+    margin: 0.3rem;
+    padding: 0rem 0.5rem;
+  }
+  .ProjectSubtitle h3{
+    font-size: 28px;
+  }
+  .ProjectDescription{
+    font-size: 15px;
+  }
 }
 /* ============ SMALL DEVICES ============ */
 @media screen and (max-width: 600px) {

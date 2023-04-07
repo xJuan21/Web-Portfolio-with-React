@@ -1,6 +1,8 @@
 import React, { useRef } from 'react'
 // import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
+// import {IoIosSend} from 'react-icons/io5'
+import {BsFillSendFill} from 'react-icons/bs'
 
 import './Contact.css'
 // import {MdOutlineEmail} from 'react-icons/md'
@@ -70,7 +72,7 @@ const Contact = () => {
                         <input type="text" name='Name' placeholder='Full Name' required />
                         <input type="email" name='email' placeholder='Email Address' required />
                         <textarea name='message' rows="7" placeholder='Your Message...' required />
-                        <button type='submit' className='SubmissionButton' value="Send">Send</button>
+                        <button type='submit' className='SubmissionButton' value="Send">Send &nbsp;<BsFillSendFill stroke="black" strokeWidth={"0.5px"}/></button>
                     </form>
                 </div>
             {/* </div> */}

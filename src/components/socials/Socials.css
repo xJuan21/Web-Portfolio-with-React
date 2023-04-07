@@ -2,7 +2,7 @@
 
 .SocialSection {
     position: relative;
-    margin: 4em auto;
+    margin: 3em auto;
     margin-bottom: 3em;
     max-width: 1754px;
     align-items: center;
@@ -10,9 +10,8 @@
 .SocialContainer {
     
     display: grid;
-    grid-gap: 0px 10px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0;
+    grid-gap: 40px;
     border: solid;
     border-color: var(--color-font);
     border-left: 0;
@@ -22,18 +21,45 @@
     margin-right: 10%;
     padding: 2em;
 }
+.Social .Icon{
+    color: black;
+    font-size: 75px;
+}
+.Social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 
-.Social img {
     padding: 0.5em;
     background: var(--color-secondary);
     border-radius: 10px;
     transition: transform .2s;
-    z-index: -5px;
 }
 
-.Social img:hover{
+.Social:hover{
+    background: var(--color-secondary-hover);
     transform: scale(1.2);
     cursor: pointer;
-    transition: all .4s ease;
-    -webkit-transition: all .4s ease;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+}
+.Social:hover .Icon{
+    color: var(--color-text-hover);
+}
+
+/* ============ MEDIUM DEVICES ============ */
+@media screen and (max-width: 1024px) {
+    .Social .Icon{
+        font-size: 50px;
+    }
+}
+/* ============ SMALL DEVICES ============ */
+@media screen and (max-width: 600px) {
+    .SocialContainer{
+        padding: 1.5em;
+    }
+    .Social .Icon{
+        font-size: 40px;
+    }
 }

@@ -1,8 +1,13 @@
 import React from 'react'
 import './../../index.css'
 import './Socials.css'
+import {BsTwitter} from 'react-icons/bs'
+import {BsLinkedin} from 'react-icons/bs'
+import {BsGithub} from 'react-icons/bs'
+
 
 const Socials = () => {
+    // const style = { color: "black", background: "" }
     return (
         <>
         <section className='SocialSection'>
@@ -10,19 +15,19 @@ const Socials = () => {
 
                 <div className='Social'>
                     <a href='https://github.com/xJuan21' target='_blank'>
-                        <img src={require('./icons/github_black.png')} alt="GitHub" ></img>
+                        <BsGithub className='Icon'/>                    
                     </a>
                 </div>
 
                 <div className='Social'>
                     <a href='https://www.linkedin.com/in/juan-mota-sanchez' target='_blank'>
-                        <img src={require('./icons/linkedin_black.png')} alt="LinkedIn" ></img>
+                        <BsLinkedin className='Icon'/>
                     </a>
                 </div>
 
                 <div className='Social'>
                     <a href='https://twitter.com/0xJuan21' target='_blank'>
-                        <img src={require('./icons/twitter_black.png')} alt="Twitter" ></img>
+                        <BsTwitter className='Icon'/>
                     </a>
                 </div>
             </div>

@@ -14,6 +14,18 @@ function Projects(){
     //Create useState to get the projects from Data.jsx
     const [data, setData] = useState(Data);
 
+    let currentWidth = window.innerWidth;
+    let Items = 3;
+
+    if(currentWidth <= 600)
+    {
+        Items = 1;
+    }else if(window.innerWidth <= 1024)
+    {
+        Items = 2;
+    }
+
+
     //Extract the 'category' value(s) for each index in Data
     const categoryData = Data.map((value)=>{
           return value.category
@@ -92,7 +104,7 @@ function Projects(){
                     
                     <div className="Project_pagination">
                         {/* <Items data={data} /> */}
-                        <Pagination ItemsList={data} ItemsPerPage={3} />
+                        <Pagination ItemsList={data} ItemsPerPage={Items} />
                     </div>                    
                 </div>
         </section>

@@ -30,12 +30,12 @@ const data = [
     {
         id: 3,
         image: IMG1,
-        platform: Windows,
+        platform: Linux,
         language: CPP,
-        title: 'Project Title',
+        title: 'Code Beautifier',
         github: 'https://github.com/xJuan21/PolyCalculator-w-Stack',
-        description: 'Brief Description',
-        category: ["C++", "Windows"]
+        description: 'Lexical Analyzer that follows a set of rules to auto-indent code or any type of text.',
+        category: ["C++", "Linux"]
     },
     {
         id: 4,
