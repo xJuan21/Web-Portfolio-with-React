@@ -26,16 +26,16 @@ const About = () => {
 
                         <div className='GetToKnowText'>
 
-                            <div className='LeftIcon'>
+                            {/* <div className='LeftIcon'>
                                 <ImHome size={'65px'}/> &nbsp;&nbsp;&nbsp;&nbsp;
                                 <GiVenezuela size={'65px'}/>
-                            </div>
+                            </div> */}
                             
                             
 
-                            <div className="RightText">
+                            {/* <div className="RightText">
                                 Originally from Venezuela. <img src={Venezuela}></img><br/>
-                            </div>
+                            </div> */}
 
                             <div className='LeftIcon'>
                                 <FaGraduationCap size={'65px'}/> 
@@ -72,12 +72,16 @@ const About = () => {
                             <div className='Skill'> JavaScript</div>
                             <div className='Skill'> Kotlin</div>
                             <div className='Skill'> C#</div>
-                            <div className='Skill'> React</div>
+                            <div className='Skill'> .NET</div>
+                            <div className='Skill'> Laravel</div>
+                            <div className='Skill'> ReactJS</div>
+                            <div className='Skill'> Node.Js</div>
                             <div className='Skill'> GitHub</div>
                             <div className='Skill'> Linux/Bash</div>
                             <div className='Skill'> Figma</div>
                             <div className='Skill'> UI/UX</div>
-                            <div className='Skill'> Scrum</div>
+                            <div className='Skill'> Agile/Scrum</div>
+                            <div className='Skill'> Excel</div>
                         </div>
                     </div>
 

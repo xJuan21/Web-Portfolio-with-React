@@ -50,6 +50,13 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
+section{
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
 ::-webkit-scrollbar {
   display: none;
 }

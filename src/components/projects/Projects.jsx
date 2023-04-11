@@ -11,6 +11,7 @@ import './Projects.css'
 // import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 function Projects(){
+    
     //Create useState to get the projects from Data.jsx
     const [data, setData] = useState(Data);
 

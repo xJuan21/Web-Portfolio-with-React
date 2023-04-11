@@ -1,9 +1,20 @@
 @import url(./../../index.css);
 .AboutSection{
     margin: auto;
+    margin-top: 3em;
     max-width: 1754px;
     align-items: center;
 }
+/* .layer2{
+    background-image: url(./Layer2.svg);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+} */
 .AboutHeader{
     position: relative;
     font-family: "Galada";
@@ -19,14 +30,28 @@
 .AboutHeader h2{
     margin-bottom: -8px;
     font-size: 65px;
+    background: url(Underline.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 .AboutHeader h3{
     font-size: 50px;
+}
+.AboutHeader .GetToKnow h3{
+    background: url(UnderlineGTK.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.AboutHeader .SkillSet h3{
+    background: url(UnderlineSkill.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 .HeaderText {
     /* font-family: "Verdana"; */
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
+    padding-top: 1em;
     padding-bottom: 2em;
 }
 .AboutContent {
@@ -101,6 +126,7 @@
     transition: all .4s ease;
     -webkit-transition: all .4s ease;
 }
+
 /* ============ MEDIUM DEVICES ============ */
 @media screen and (max-width: 1024px) {
     .AboutContent{
@@ -146,8 +172,11 @@
     }
 }
 /* ============ SMALL DEVICES ============ */
-/* @media screen and (max-width: 600px) {
-    .ContactContainer{
-        width: var(--container-width-sm);
+@media screen and (max-width: 600px) {
+    .AboutHeader .GetToKnow h3{
+        font-size: 45px;
+        background: url(Underline.svg);
+        background-position: bottom;
+        background-repeat: no-repeat;
     }
-} */
+}

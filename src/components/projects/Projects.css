@@ -20,7 +20,10 @@
 }
 .ProjectContainer h2{
     font-size: 65px;
-    margin-bottom: 0.2em;
+    background: url(UnderlineProjects.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    margin-bottom: 0.3em;
 }
 .ProjectMenu{
   align-items: center;
@@ -148,8 +151,6 @@
   text-align: left;
   font-size: 20px;
 }
-.carousel .carousel-slider{
-}
 .carousel-root .control-dots {
   margin: -5px 0;
 }
@@ -205,7 +206,6 @@ label {
     justify-content: center;
     padding-bottom: 50px;
 }
-
 input:nth-child(1):checked ~ .dots label:nth-child(1),
 input:nth-child(2):checked ~ .dots label:nth-child(2),
 input:nth-child(3):checked ~ .dots label:nth-child(3) {
@@ -255,6 +255,19 @@ input:nth-child(3):checked ~ .carousel-images {
   }
   .ProjectDescription{
     font-size: 15px;
+  }
+}
+/* ============ MEDIUM DEVICES ============ */
+@media screen and (max-width: 1024px) {
+  .ProjectContainer h2{
+    margin-bottom: 12px;
+  }
+  .ProjectsList{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 1rem;
   }
 }
 /* ============ SMALL DEVICES ============ */

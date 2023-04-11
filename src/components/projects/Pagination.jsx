@@ -48,7 +48,8 @@ function Pagination({ItemsList, ItemsPerPage}) {
         <ReactPaginate
           className="pagination"
           breakLabel="..."
-          nextLabel=" >"
+          nextLabel=" Next->"
+          previousLabel="<-Previous "
           // initialPage={2}
           // activePage={forcePage}
           forcePage={0}
@@ -56,8 +57,9 @@ function Pagination({ItemsList, ItemsPerPage}) {
           pageRangeDisplayed={5}
           pageCount={pageCount}
           pageClassName = 'PageElement'
-          previousLabel="< "
           renderOnZeroPageCount={null}
+          disabledClassName={"pagination_link--disabled"}
+          activeClassName={"pagination_link--active"}
         />
       </>
     );
